@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.heart-counter {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.heart-counter table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.heart-counter td {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.heart-counter .grey-heart {
+  color: grey;
+}
+
+.heart-counter .red-heart {
+  color: red;
+}
+
+.heart-counter .green-heart {
+  color: green;
+}
+
+.heart-counter .blue-heart {
+  color: blue;
+}
+
+#reset-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+  background-color: #0056b3;
+}
+
+.grid-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.row-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+}
+
+.row-labels p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  gap: 5px;
+}
+
+.grid-cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.grid-cell:hover {
+  transform: scale(1.1);
+}
+
+.heart {
+  font-size: 2em;
+  color: grey;
+  transition: color 0.3s ease-in-out;
+}
+
+.heart.red {
+  color: red;
+}
+
+.heart.green {
+  color: green;
+}
+
+.heart.blue {
+  color: blue;
+}
